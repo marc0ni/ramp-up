@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RampPlacerVC.swift
 //  ramp-up
 //
 //  Created by Mark Lindamood on 2/26/18.
@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class RampPlacerVC: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
