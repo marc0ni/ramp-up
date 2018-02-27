@@ -21,12 +21,25 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-FA-rTr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyv-uH-Lzx">
+                                <rect key="frame" x="252" y="576" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="HoO-rf-y68"/>
+                                    <constraint firstAttribute="width" constant="107" id="Orj-5P-JaD"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="onRampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Orh-nM-CZZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FET-GY-sD9" firstAttribute="bottom" secondItem="mNj-FA-rTr" secondAttribute="bottom" id="4Ki-Mb-uTw"/>
                             <constraint firstItem="mNj-FA-rTr" firstAttribute="top" secondItem="tNI-G4-2Zd" secondAttribute="top" id="8Np-uR-aSe"/>
+                            <constraint firstItem="FET-GY-sD9" firstAttribute="bottom" secondItem="Gyv-uH-Lzx" secondAttribute="bottom" constant="20" id="DUl-5F-Hmr"/>
                             <constraint firstItem="FET-GY-sD9" firstAttribute="trailing" secondItem="mNj-FA-rTr" secondAttribute="trailing" id="S8L-jJ-O8q"/>
+                            <constraint firstItem="FET-GY-sD9" firstAttribute="trailing" secondItem="Gyv-uH-Lzx" secondAttribute="trailing" constant="16" id="kPm-n6-3DT"/>
                             <constraint firstItem="mNj-FA-rTr" firstAttribute="leading" secondItem="FET-GY-sD9" secondAttribute="leading" id="kTl-zj-szn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FET-GY-sD9"/>
@@ -39,4 +52,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
